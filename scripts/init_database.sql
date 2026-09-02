@@ -32,6 +32,7 @@ END
 GO
 	CREATE DATABASE DataWareHouse;
 
+GO
 	USE DataWareHouse;
 GO
 
