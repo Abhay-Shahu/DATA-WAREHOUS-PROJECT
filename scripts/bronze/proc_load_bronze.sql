@@ -79,7 +79,7 @@ BEGIN
 		PRINT 'Loading CRM Tables';
 		PRINT'------------------------------------------';
 		SET @starttime =GetDATE();
-		PRINT'>>Truncating Table : bronze.bronze.erp_loc_a101';
+		PRINT'>>Truncating Table : bronze.erp_loc_a101';
 		TRUNCATE TABLE bronze.erp_loc_a101;
 		PRINT'>>Inserting into : bronze.bronze.erp_loc_a101';
 		BULK INSERT bronze.erp_loc_a101
@@ -92,7 +92,7 @@ BEGIN
 		SET @endtime =GETDATE();
 		PRINT'>>LOAD DURATION :'+CAST(DATEDIFF(second,@starttime,@endtime) AS NVARCHAR)+' seconds';
 		PRINT'-----------------';
-		PRINT'>>Truncating Table : bronze.bronze.erp_cust_az12';
+		PRINT'>>Truncating Table : bronze.erp_cust_az12';
 		SET @starttime =GetDATE();
 		TRUNCATE TABLE bronze.erp_cust_az12;
 		PRINT'>>Inserting into : bronze.bronze.erp_cust_az12';
@@ -106,7 +106,7 @@ BEGIN
 		SET @endtime =GETDATE();
 		PRINT'>>LOAD DURATION :'+CAST(DATEDIFF(second,@starttime,@endtime) AS NVARCHAR)+' seconds';
 	    PRINT'-----------------';
-		PRINT'>>Truncating Table : bronze.bronze.erp_px_cat_g1v2';
+		PRINT'>>Truncating Table : bronze.erp_px_cat_g1v2';
 		SET @starttime =GetDATE();
 		TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 		PRINT'>>Inserting into : bronze.bronze.erp_px_cat_g1v2';
